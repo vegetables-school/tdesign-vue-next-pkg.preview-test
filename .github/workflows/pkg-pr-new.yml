@@ -19,10 +19,8 @@ jobs:
         with:
           node-version: 18
 
-      - run: pnpm install
-
-      - run: pnpm build
-
-      - run: node  ./scripts/prepare-package.js
-
-      - run: pnpm dlx pkg-pr-new publish --template
+      - run: |
+          pnpm install
+          pnpm build
+          node ./scripts/prepare-package.js
+          pnpm dlx pkg-pr-new publish --template ./tdesign-vue-next-demo
