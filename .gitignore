@@ -1,3 +1,5 @@
 node_modules
 dist
 tdesign-vue-next-demo
+
+pnpm-lock.yaml
