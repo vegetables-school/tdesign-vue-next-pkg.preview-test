@@ -21,6 +21,7 @@ jobs:
           node-version: 18
 
       - run: |
+          git init
           pnpm install
           pnpm build
           node ./scripts/prepare-package.js
