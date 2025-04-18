@@ -23,4 +23,6 @@ jobs:
 
       - run: pnpm build
 
+      - run: node  ./scripts/prepare-package.js
+
       - run: pnpm dlx pkg-pr-new publish --template
